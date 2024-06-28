@@ -3,6 +3,9 @@ import HeroSection from "./components/HeroSection.jsx";
 import Navbar from "./components/Navbar.jsx";
 import AboutSection from "./components/AboutSection.jsx";
 import ProjectsSection from "./components/ProjectsSection.jsx";
+import EmailSection from "./components/EmailSection.jsx";
+import Footer from "./components/Footer.jsx";
+import AchievementsSection from "./components/AchievementsSection.jsx";
 
 export default function Home() {
   return (
@@ -10,9 +13,12 @@ export default function Home() {
       <Navbar />
       <div className="container mx-auto mt-24 px-12 py-4">
         <HeroSection />
+        <AchievementsSection />
         <AboutSection />
         <ProjectsSection />
+        <EmailSection />
       </div>
+      <Footer />
     </main>
   );
 }
