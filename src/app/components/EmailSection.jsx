@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
@@ -25,7 +26,7 @@ const EmailSection = () => {
         </div>
       </div>
       <div>
-        <form action={process.env.FORM_API_KEY} method="POST">
+        <form action="https://formspree.io/f/mblrrvej" method="POST">
           <div class="mb-6">
             <label
               for="email"
