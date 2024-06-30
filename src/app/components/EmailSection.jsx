@@ -25,7 +25,7 @@ const EmailSection = () => {
         </div>
       </div>
       <div>
-        <form action="https://formspree.io/f/mblrrvej" method="POST">
+        <form action={process.env.NEXT_PUBLIC_FORM_API_KEY} method="POST">
           <div class="mb-6">
             <label
               for="email"
