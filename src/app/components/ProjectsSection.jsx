@@ -11,6 +11,8 @@ const projectsData = [
     description: "Manage you Finances with ease!",
     image: "/images/projects/1.png",
     tag: ["All", "Fullstack"],
+    path: "https://finance-track-app.vercel.app/",
+    gitPath:"https://github.com/bhavkushwaha/Finance-Tracker-v2",
   },
   {
     id: 2,
@@ -18,6 +20,8 @@ const projectsData = [
     description: "A website for a logistics company",
     image: "/images/projects/2.png",
     tag: ["All", "Frontend"],
+    path: "https://swastiklogistics.netlify.app/",
+    gitPath:"https://github.com/bhavkushwaha/SwastikLogistics",
   },
   {
     id: 3,
@@ -25,6 +29,8 @@ const projectsData = [
     description: "A website for a consultancy firm",
     image: "/images/projects/3.png",
     tag: ["All", "Frontend"],
+    path: "https://jhumpus.netlify.app/",
+    gitPath:"https://github.com/bhavkushwaha/Jhumpus",
   },
   {
     id: 4,
@@ -32,6 +38,8 @@ const projectsData = [
     description: "A simple notes keeper app",
     image: "/images/projects/4.png",
     tag: ["All", "Fullstack"],
+    path: "https://keeper-by-bhav.netlify.app/",
+    gitPath:"https://github.com/bhavkushwaha/ReactJs-PracticeProjects",
   },
   {
     id: 5,
@@ -39,6 +47,8 @@ const projectsData = [
     description: "A chatbot to manage your finances",
     image: "/images/projects/5.png",
     tag: ["All", "Fullstack"],
+    path: "https://finanalysis-chatbot.onrender.com/",
+    gitPath:"https://github.com/bhavkushwaha/FinAnalysis-Chatbot",
   },
   {
     id: 6,
@@ -46,6 +56,8 @@ const projectsData = [
     description: "A website for a travel agency",
     image: "/images/projects/6.png",
     tag: ["All", "Frontend"],
+    path: "https://trvl-by-bhav.netlify.app/",
+    gitPath:"https://github.com/bhavkushwaha/TRVL-WebApp",
   },
 ];
 const ProjectsSection = () => {
@@ -102,6 +114,8 @@ const ProjectsSection = () => {
               title={project.title}
               description={project.description}
               imgUrl={project.image}
+              path={project.path}
+              gitPath={project.gitPath}
             />
           </motion.li>
         ))}
