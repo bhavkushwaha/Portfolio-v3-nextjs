@@ -16,7 +16,7 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-7 place-self-center  place-items-center grid lg:place-items-start"
         >
-          <h1 className="text-white max-w-2xl mb-4 text-4xl lg:text-6xl lg:leading-normal font-extrabold">
+          <h1 className="text-white max-w-2xl mb-4 text-4xl lg:text-6xl lg:leading-normal font-extrabold customCSS">
             <span className="text-transparent text-6xl bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
               Hello, I'm Bhav{" "}
             </span>{" "}
@@ -28,10 +28,10 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] text-lg lg:text-xl">
+          <p className="text-[#ADB7BE] text-lg lg:text-xl customCSS">
             A passionate Software Engineer with a strong interest in building scalable applications!
           </p>
-          <div>
+          <div className="customCSS-font">
             <button className="bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-200 text-white px-6 py-3 rounded-full mr-4">
             <Link href="#contact">
               Hire Me

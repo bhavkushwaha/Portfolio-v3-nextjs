@@ -8,7 +8,7 @@ const projectsData = [
   {
     id: 1,
     title: "Finance Tracker Application",
-    description: "Manage you Finances with ease!",
+    description: "Manage your Finances with ease!",
     image: "/images/projects/1.png",
     tag: ["All", "Fullstack"],
     path: "https://finance-track-app.vercel.app/",
