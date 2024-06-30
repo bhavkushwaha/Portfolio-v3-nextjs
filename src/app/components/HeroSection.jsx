@@ -1,12 +1,14 @@
 "use client";
-import React from "react";
+import {React} from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const HeroSection = () => {
+ 
   return (
-    <section className="lg:py-16">
+    <section className="lg:py-16" id="#home">
       <div className="grid grid-cols-1 lg:grid-cols-12 my-4">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -27,16 +29,19 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-lg lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-            eius!
+            A passionate Software Engineer with a strong interest in building scalable applications!
           </p>
           <div>
-            <button className="bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white px-6 py-3 rounded-full mr-4">
+            <button className="bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-200 text-white px-6 py-3 rounded-full mr-4">
+            <Link href="#contact">
               Hire Me
+              </Link>
             </button>
-            <button className="m-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 px-1 py-1  text-white rounded-full">
+            <button className="m-4 bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 px-1 py-1  text-white rounded-full">
               <span className="block bg-[#121212] hover:bg-slate-800 px-5 py-2 rounded-full">
+                <Link href="https://drive.google.com/file/d/1QjeSk2I13k8McYao0RSfKEjt6fXyDdS1/view?usp=sharing">
                 Download CV
+                </Link>
               </span>
             </button>
           </div>
