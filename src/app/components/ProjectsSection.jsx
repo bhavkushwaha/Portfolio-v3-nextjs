@@ -1,72 +1,72 @@
-"use client";
-import React, { useState, useRef } from "react";
-import ProjectCard from "./ProjectCard";
-import ProjectTag from "./ProjectTag";
-import { motion, useInView } from "framer-motion";
+'use client';
+import React, { useState, useRef } from 'react';
+import ProjectCard from './ProjectCard';
+import ProjectTag from './ProjectTag';
+import { motion, useInView } from 'framer-motion';
 
 const projectsData = [
   {
     id: 1,
-    title: "Finance Tracker Application",
-    description: "Manage your Finances with ease!",
-    image: "/images/projects/1.png",
-    tag: ["All", "Fullstack"],
-    path: "https://finance-track-app.vercel.app/",
-    gitPath:"https://github.com/bhavkushwaha/Finance-Tracker-v2",
+    title: 'Finance Tracker Application',
+    description: 'Manage your Finances with ease!',
+    image: '/images/projects/1.png',
+    tag: ['All', 'Fullstack'],
+    path: 'https://finance-track-app.vercel.app/',
+    gitPath: 'https://github.com/bhavkushwaha/Finance-Tracker-v2',
   },
   {
     id: 2,
-    title: "Logistics Website",
-    description: "A website for a logistics company",
-    image: "/images/projects/2.png",
-    tag: ["All", "Frontend"],
-    path: "https://swastiklogistics.netlify.app/",
-    gitPath:"https://github.com/bhavkushwaha/SwastikLogistics",
+    title: 'SentinelOSINT',
+    description: 'A Realtime Intelligence Dashboard',
+    image: '/images/projects/2.png',
+    tag: ['All', 'Frontend'],
+    path: 'https://sentinelosnit-v1.bhavkushwaha.com/',
+    gitPath: 'https://github.com/bhavkushwaha/SentinelOSNIT-v1',
   },
   {
     id: 3,
-    title: "Consultancy Website",
-    description: "A website for a consultancy firm",
-    image: "/images/projects/3.png",
-    tag: ["All", "Frontend"],
-    path: "https://jhumpus.netlify.app/",
-    gitPath:"https://github.com/bhavkushwaha/Jhumpus",
+    title: 'Consultancy Website',
+    description: 'A website for a consultancy firm',
+    image: '/images/projects/3.png',
+    tag: ['All', 'Frontend'],
+    path: 'https://jhumpus.netlify.app/',
+    gitPath: 'https://github.com/bhavkushwaha/Jhumpus',
   },
   {
     id: 4,
-    title: "Notes Keeper App",
-    description: "A simple notes keeper app",
-    image: "/images/projects/4.png",
-    tag: ["All", "Fullstack"],
-    path: "https://keeper-by-bhav.netlify.app/",
-    gitPath:"https://github.com/bhavkushwaha/ReactJs-PracticeProjects",
+    title: 'Notes Keeper App',
+    description: 'A simple notes keeper app',
+    image: '/images/projects/4.png',
+    tag: ['All', 'Fullstack'],
+    path: 'https://keeper-by-bhav.netlify.app/',
+    gitPath: 'https://github.com/bhavkushwaha/ReactJs-PracticeProjects',
   },
   {
     id: 5,
-    title: "Finance Chatbot",
-    description: "A chatbot to manage your finances",
-    image: "/images/projects/5.png",
-    tag: ["All", "Fullstack"],
-    path: "https://finanalysis-chatbot.onrender.com/",
-    gitPath:"https://github.com/bhavkushwaha/FinAnalysis-Chatbot",
+    title: 'Finance Chatbot',
+    description: 'A chatbot to manage your finances',
+    image: '/images/projects/5.png',
+    tag: ['All', 'Fullstack'],
+    path: 'https://finanalysis-chatbot.onrender.com/',
+    gitPath: 'https://github.com/bhavkushwaha/FinAnalysis-Chatbot',
   },
   {
     id: 6,
-    title: "Travel Agency Website",
-    description: "A website for a travel agency",
-    image: "/images/projects/6.png",
-    tag: ["All", "Frontend"],
-    path: "https://trvl-by-bhav.netlify.app/",
-    gitPath:"https://github.com/bhavkushwaha/TRVL-WebApp",
+    title: 'Travel Agency Website',
+    description: 'A website for a travel agency',
+    image: '/images/projects/6.png',
+    tag: ['All', 'Frontend'],
+    path: 'https://trvl-by-bhav.netlify.app/',
+    gitPath: 'https://github.com/bhavkushwaha/TRVL-WebApp',
   },
 ];
 const ProjectsSection = () => {
-  const [tag, setTag] = useState("All");
+  const [tag, setTag] = useState('All');
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
   const filteredProjects = projectsData.filter((project) =>
-    project.tag.includes(tag)
+    project.tag.includes(tag),
   );
 
   const cardVariants = {
@@ -87,17 +87,17 @@ const ProjectsSection = () => {
         <ProjectTag
           name="All"
           onClick={handleTagChange}
-          isSelected={tag === "All"}
+          isSelected={tag === 'All'}
         />
         <ProjectTag
           name="Frontend"
           onClick={handleTagChange}
-          isSelected={tag === "frontend"}
+          isSelected={tag === 'frontend'}
         />
         <ProjectTag
           name="Fullstack"
           onClick={handleTagChange}
-          isSelected={tag == "fullstack"}
+          isSelected={tag == 'fullstack'}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
@@ -106,8 +106,8 @@ const ProjectsSection = () => {
             key={index}
             variants={cardVariants}
             initial="initial"
-            animate={isInView ? "animate" : "initial"}
-            transition={ {duration: 0.3, delay: index * 0.4 }}
+            animate={isInView ? 'animate' : 'initial'}
+            transition={{ duration: 0.3, delay: index * 0.4 }}
           >
             <ProjectCard
               key={project.id}
