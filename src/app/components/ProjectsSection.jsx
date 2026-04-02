@@ -20,7 +20,7 @@ const projectsData = [
     description: 'A Realtime Intelligence Dashboard',
     image: '/images/projects/2.png',
     tag: ['All', 'Frontend'],
-    path: 'https://sentinelosnit-v1.bhavkushwaha.com/',
+    path: 'https://sentinelosnit.bhavkushwaha.com/',
     gitPath: 'https://github.com/bhavkushwaha/SentinelOSNIT-v1',
   },
   {
