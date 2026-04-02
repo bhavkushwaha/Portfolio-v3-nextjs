@@ -34,12 +34,12 @@ const projectsData = [
   },
   {
     id: 4,
-    title: 'Notes Keeper App',
-    description: 'A simple notes keeper app',
+    title: 'F1 Apex Dashboard',
+    description: 'F1 Insights loaded with Realtime Data',
     image: '/images/projects/4.png',
     tag: ['All', 'Fullstack'],
-    path: 'https://keeper-by-bhav.netlify.app/',
-    gitPath: 'https://github.com/bhavkushwaha/ReactJs-PracticeProjects',
+    path: 'https://f1apex.bhavkushwaha.com/',
+    gitPath: 'https://github.com/bhavkushwaha/F1-Apex-Intelligence',
   },
   {
     id: 5,
