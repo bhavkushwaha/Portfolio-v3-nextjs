@@ -37,7 +37,7 @@ const projectsData = [
     title: 'F1 Apex Dashboard',
     description: 'F1 Insights loaded with Realtime Data',
     image: '/images/projects/4.png',
-    tag: ['All', 'Fullstack'],
+    tag: ['All', 'Frontend'],
     path: 'https://f1apex.bhavkushwaha.com/',
     gitPath: 'https://github.com/bhavkushwaha/F1-Apex-Intelligence',
   },
@@ -52,10 +52,10 @@ const projectsData = [
   },
   {
     id: 6,
-    title: 'Travel Agency Website',
-    description: 'A website for a travel agency',
+    title: 'Blogs By Bhav',
+    description: 'My public notebook on life and ideas',
     image: '/images/projects/6.png',
-    tag: ['All', 'Frontend'],
+    tag: ['All', 'Fullstack'],
     path: 'https://blog.bhavkushwaha.com/',
   },
 ];
