@@ -56,8 +56,7 @@ const projectsData = [
     description: 'A website for a travel agency',
     image: '/images/projects/6.png',
     tag: ['All', 'Frontend'],
-    path: 'https://trvl-by-bhav.netlify.app/',
-    gitPath: 'https://github.com/bhavkushwaha/TRVL-WebApp',
+    path: 'https://blog.bhavkushwaha.com/',
   },
 ];
 const ProjectsSection = () => {
