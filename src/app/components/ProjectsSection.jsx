@@ -57,6 +57,7 @@ const projectsData = [
     image: '/images/projects/6.png',
     tag: ['All', 'Fullstack'],
     path: 'https://blog.bhavkushwaha.com/',
+    gitPath: 'https://github.com/bhavkushwaha/',
   },
 ];
 const ProjectsSection = () => {
